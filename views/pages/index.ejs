@@ -1,0 +1,248 @@
+<%- include('../partials/header') %>
+   <section class="hero position-relative">
+    <div class="container-hero">
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="w-100 hero-video" autoplay muted loop playsinline poster="/img/newImg1.jpg">
+                        <source src="/video/hero/hero5.webm" type="video/webm" >
+                        <source src="/video/hero/hero5.mp4" type="video/mp4">
+                    </video>
+                    
+                </div>
+                <div class="carousel-item">
+                  <video class="w-100 hero-video" autoplay muted loop playsinline poster="/img/newImg2.jpg">
+                      <source src="/video/hero/hero6.webm" type="video/webm">
+                      <source src="/video/hero/hero6.mp4" type="video/mp4">
+                  </video>
+                  
+              </div>
+            </div>
+        </div>
+          <div class="hero-text position-absolute top-50 start-50 translate-middle text-center">
+              <h1 class="main text-white display-1 fw-bold lb">Hi, I am Lucas Braga.</h1>
+              <p class="text-white lead">Filmmaker, Photographer & UI & UX Designer.</p>
+          </div>
+      </div>
+  </section>
+
+ <section id="services" class="services-section py-5 text-center">
+  <div class="container">
+    <h2 class="section-heading mb-5 fadeIn">Services</h2>
+    <div class="row justify-content-center gx-5 gy-4">
+
+        
+        <!-- Filmmaking -->
+        <div class="col-md-4 service-box" data-service="videography">
+          <div class="service-item">
+            <div class="service-front">
+              <i class="fas fa-video fa-4x text-custom mb-3"></i>
+              <h5>Filmmaking</h5>
+              <p>Cinematic videos for storytelling — from weddings to brand commercials.</p>
+              <button class="more-btn">More</button>
+            </div>
+            <div class="service-back">
+              <div>
+                <h5>Filmmaking</h5>
+                <p>We craft cinematic wedding films, commercials, and creative storytelling content tailored to brands and people.</p>
+              </div>
+              <a class="hire-btn" href="#" target="_blank">Hire</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Photography -->
+        <div class="col-md-4 service-box" data-service="photography">
+          <div class="service-item">
+            <div class="service-front">
+              <i class="fas fa-camera fa-4x text-custom mb-3"></i>
+              <h5>Photography</h5>
+              <p>Capturing timeless moments with precision — portraits, events, and products.</p>
+              <button class="more-btn">More</button>
+            </div>
+            <div class="service-back">
+              <div>
+                <h5>Photography</h5>
+                <p>Professional event, portrait, and commercial photography. Clean edits, sharp results, timeless impact.</p>
+              </div>
+              <a class="hire-btn" href="#" target="_blank">Hire</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Content Creation -->
+        <div class="col-md-4 service-box" data-service="content creation">
+          <div class="service-item">
+            <div class="service-front">
+              <i class="fas fa-pencil-ruler fa-4x text-custom mb-3"></i>
+              <h5>Content Creation</h5>
+              <p>Specialized content to bring customers to companies and enhance brand presence.</p>
+              <button class="more-btn">More</button>
+            </div>
+            <div class="service-back">
+              <div>
+                <h5>Content Creation</h5>
+                <p>We build branded content, manage social presence, and deliver storytelling visuals that drive engagement.</p>
+              </div>
+              <a class="hire-btn" href="#" target="_blank">Hire</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+    <!-- original about with bigger image no display on the phone 
+     
+    <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        
+
+        <div class="col-lg-5 mb-4 mb-lg-0 text-center d-none d-lg-block">
+          <img src="/img/me.jpg" alt="Lucas Braga" class="data-tilt img-fluid rounded-4 shadow about-img">
+        </div>
+  
+  
+        <div class="col-lg-7">
+          <h2 class="mb-4 fw-semibold">About Me</h2>
+          <p class="lead text-muted">
+            I’m Lucas Braga — a filmmaker, photographer, and UX/UI designer dedicated to creating visually compelling stories and user-centered experiences. Based in London, available worldwide.
+          </p>
+          <p class="text-muted">
+            My work blends creative storytelling with modern design principles. Whether it’s a video shoot or an interface layout, I bring ideas to life with clarity and style.
+          </p>
+  
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+       
+            <button class="btn btn-warning btn-lg px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#contactModal">Let’s Work Together</button>
+            
+       
+            <a href="/gallery.html" class="btn btn-outline-dark btn-lg px-4 shadow-sm">View Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+
+    -->
+
+
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-center flex-column flex-sm-row">
+        
+        <!-- Image (visible on all screens, responsive size) -->
+        <div class="col-sm-4 col-lg-5 mb-4 mb-sm-0 text-center">
+          <img src="/img/me.jpg" alt="Lucas Braga" class="data-tilt img-fluid rounded-4 shadow about-img" />
+
+        </div>
+  
+        <!-- Text Content -->
+        <div class="col-sm-8 col-lg-7 text-sm-start text-center">
+          <h2 class="mb-4 fw-semibold">About Me</h2>
+          <p class="lead text-muted">
+            I’m Lucas Braga — a filmmaker and photographer passionate about crafting cinematic narratives and visual art. I enjoy alternative art and bold creative expression. Based in London, available worldwide.
+          </p>
+          <p class="text-muted">
+            My work blends creative storytelling with a deep passion for cinema and the arts. Whether it's through a video shoot or a visual concept, I bring ideas to life with imagination, emotion, and artistic flair.
+          </p>
+  
+          <!-- CTA Buttons -->
+          <div class="d-flex flex-wrap gap-3 mt-4 justify-content-sm-start justify-content-center">
+            <button class="btn btn-warning btn-lg px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#contactModal">Let’s Work Together</button>
+            <a href="/gallery" class="btn btn-outline-dark btn-lg px-4 shadow-sm">View Gallery</a>
+            <a href="https://www.instagram.com/br4ga___" class="btn btn-outline-dark btn-lg px-4 shadow-sm" target="_blank">Social</a>
+          </div>
+          
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Get in Touch</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead text-center mb-4">Choose one of the following options to contact me:</p>
+          <div class="d-flex flex-column gap-3">
+            <!-- WhatsApp Option -->
+            <a href="https://wa.me/+4407514996775?text=Hello%2C%20im%20interested%20in%20your%20work" class="btn btn-success btn-lg shadow-sm contact-option" target="_blank">
+              <i class="fab fa-whatsapp"></i> Contact me on WhatsApp
+            </a>
+            
+            <!-- Email Option -->
+            <a href="mailto:lucashbragaf1@gmail.com" class="btn btn-info btn-lg shadow-sm contact-option">
+              <i class="fas fa-envelope"></i> Contact me via Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+  <section id="get-a-quote" class="contact-section py-5">
+    <!-- Video Background -->
+    <div class="video-background">
+      <video muted autoplay loop playsinline disablePictureInPicture
+      controlsList>
+        <source src="/img/gallery/videos/8.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  
+    <div class="form-container">
+      <h2 class="section-heading mb-4 text-center">Get a Quote</h2>
+      <div class="contact-form">
+        <form action="/submit-quote" method="POST">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="job">Type of Job</label>
+            <select id="job" name="job" required>
+              <option value="videography">Videography</option>
+              <option value="photography">Photography</option>
+              <option value="content-creation">Content Creation</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Get a Quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+<%- include('../partials/footer') %>
