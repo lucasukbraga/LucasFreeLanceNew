@@ -59,6 +59,11 @@ app.get('/thank-you', (req, res) => {
   res.render('pages/index', { title: 'Home', activePage: 'home' });
 });
 
+app.get('/form', (req, res) => {
+  res.render('pages/form', { title: 'Get a Quote', activePage: 'form' });
+});
+
+
 
 
 // Gallery route (separate page)
