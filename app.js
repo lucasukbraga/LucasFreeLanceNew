@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/thank-you', (req, res) => {
-  res.render('pages/index', { title: 'Home', activePage: 'home' });
+  res.render('pages/thank-you');
 });
 
 
