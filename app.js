@@ -56,8 +56,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/thank-you', (req, res) => {
-  res.render('pages/thank-you');
+  res.render('pages/index', { title: 'Home', activePage: 'home' });
 });
+
 
 
 // Gallery route (separate page)
