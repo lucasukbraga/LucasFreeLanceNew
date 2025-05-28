@@ -31,7 +31,7 @@ app.post('/submit-quote', async (req, res) => {
       parse_mode: 'Markdown',
     });
 
-    res.redirect('/?quote=success');
+    res.redirect('/thank-you');
   } catch (err) {
     console.error('Telegram Error:', err.response?.data || err.message);
     res.status(500).send('Message failed to send.');
@@ -54,6 +54,11 @@ app.get('/get-a-quote', (req, res) => {
 app.get('/', (req, res) => {
   res.render('pages/index', { title: 'Home', activePage: 'home' });
 });
+
+app.get('/thank-you', (req, res) => {
+  res.render('pages/index', { title: 'Home', activePage: 'home' });
+});
+
 
 // Gallery route (separate page)
 app.get('/gallery', (req, res) => {
