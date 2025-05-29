@@ -56,8 +56,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/thank-you', (req, res) => {
-  res.render('pages/index', { title: 'Home', activePage: 'home' });
+  res.render('pages/thank-you', { title: 'Thank You', activePage: 'thank-you' });
 });
+
 
 app.get('/form', (req, res) => {
   res.render('pages/form', { title: 'Get a Quote', activePage: 'form' });
