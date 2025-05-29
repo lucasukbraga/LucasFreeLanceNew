@@ -31,7 +31,7 @@ app.post('/submit-quote', async (req, res) => {
       parse_mode: 'Markdown',
     });
 
-    res.redirect('/?quote=success');
+    res.redirect('/thank-you');
   } catch (err) {
     console.error('Telegram Error:', err.response?.data || err.message);
     res.status(500).send('Message failed to send.');
@@ -45,10 +45,26 @@ app.set('views', path.join(__dirname, 'views'));
 // Serve static files (CSS, JS, images, etc.)
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/get-a-quote', (req, res) => {
+  res.redirect('/#get-a-quote');
+});
+
+
 // Home route (with About and Contact sections in this same page)
 app.get('/', (req, res) => {
   res.render('pages/index', { title: 'Home', activePage: 'home' });
 });
+
+app.get('/thank-you', (req, res) => {
+  res.render('pages/index', { title: 'Home', activePage: 'home' });
+});
+
+app.get('/form', (req, res) => {
+  res.render('pages/form', { title: 'Get a Quote', activePage: 'form' });
+});
+
+
+
 
 // Gallery route (separate page)
 app.get('/gallery', (req, res) => {
