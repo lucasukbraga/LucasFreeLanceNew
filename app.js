@@ -72,6 +72,11 @@ app.get('/gallery', (req, res) => {
   res.render('pages/gallery', { title: 'Gallery', activePage: 'gallery' });
 });
 
+// NEW Privacy Policy route
+app.get('/privacy', (req, res) => {
+  res.render('pages/privacy', { title: 'Privacy Policy', activePage: 'privacy' });
+});
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
